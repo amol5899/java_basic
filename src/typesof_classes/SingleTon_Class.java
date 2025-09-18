@@ -24,7 +24,7 @@ public class SingleTon_Class {
 	private static volatile SingleTon_Class instance = null;
 
 	private SingleTon_Class() throws Exception {
-		this.objectState = "Javatpoint";
+		this.objectState = "Javapoint";
 	}
 
 	public static SingleTon_Class getInstance() {
