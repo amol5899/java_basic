@@ -1,12 +1,16 @@
 package features.java_8;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamAPI {
@@ -52,6 +56,12 @@ public class StreamAPI {
 		System.out.println("reduce() -> " + sum);
 
 		// Second Largest Element in Array
+		int[] array = { 10, 52, 14, 52, 23, 22, 74, 72 };
+		IntStream stream = Arrays.stream(array);
+
+		Optional<Integer> first = stream.boxed().sorted(Comparator.reverseOrder()).distinct().skip(1).findFirst();
+
+		System.out.println(first);
 
 	}
 }

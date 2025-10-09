@@ -28,5 +28,5 @@ public class LambdaExpression {
 
 @FunctionalInterface // It is optional
 interface Lambda {
-	int display();
+	int  display();
 }

@@ -6,9 +6,16 @@ class Studentt
 	{
 		System.out.println("I am Student");
 	}
+	public void show() {
+		
+	}
 }
 class Ram extends Studentt
 {
+	
+	{
+		super.show();
+	}
 	 Ram() 
 	{
 		super();
